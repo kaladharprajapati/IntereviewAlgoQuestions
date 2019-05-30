@@ -14,7 +14,7 @@ This repo will have my solutions for a lot of the questions asked by the big com
   </p>
   <a href="./findTheLargestMultiply.js">source</a>
   <br>
-  <a href="https://medium.com/@artium1/interview-question-1-find-the-largest-multiply-ebaa972e23d1">explanation</a>
+  <a target="_blank" href="https://medium.com/@artium1/interview-question-1-find-the-largest-multiply-ebaa972e23d1">explanation</a>
   <br>
   <br>
 </details>
