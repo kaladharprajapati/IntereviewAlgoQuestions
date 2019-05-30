@@ -10,7 +10,7 @@ This repo will have my solutions for a lot of the questions asked by the big com
   <br>
   <a href="#">explanation</a>
 </details>
-<br>
+
 <details>
   <summary>Find The Word In Board - asked by Microsoft</summary>
   <br>
@@ -18,7 +18,7 @@ This repo will have my solutions for a lot of the questions asked by the big com
   <br>
   <a href="#">explanation</a>
 </details>
-<br>
+
 <details>
   <summary>Two Identical Subsets - asked by Facebook</summary>
   <br>
@@ -26,7 +26,7 @@ This repo will have my solutions for a lot of the questions asked by the big com
   <br>
   <a href="#">explanation</a>
 </details>
-<br>
+
 <details>
   <summary>Perfct Number - asked by Microsoft</summary>
   <br>
@@ -34,7 +34,7 @@ This repo will have my solutions for a lot of the questions asked by the big com
   <br>
   <a href="#">explanation</a>
 </details>
-<br>
+
 <details>
   <summary>Multiplication Table - asked by Apple</summary>
   <br>
