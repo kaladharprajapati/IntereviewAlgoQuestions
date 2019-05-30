@@ -4,11 +4,12 @@
 // For example, if the list is [-10, -10, 5, 2], we should return 500, since that's -10 * -10 * 5.
 // You can assume the list has at least three integers.
 
-const arr = [10, 10, 5, 3, 11, 12, -12];
+const arr = [10, -10, 5, -2, 3, -3, -5, -11, -12, -12];
 
-function findLargestMultiply(arr) {
+function findLargestMultiply(arr, n) {
   const negative = [];
   const positive = [];
+  const isNOdd = n % 2 === 0 ? false : true;
   for (const i of arr) {
     if (i < 0) {
       negative.push(i);
@@ -23,9 +24,11 @@ function findLargestMultiply(arr) {
 
   // get only the three first values of each array
   let greatestNegative =
-    negativeSorted.length >= 3 ? negativeSorted.slice(0, 3) : negativeSorted;
+    negativeSorted.length >= n ? negativeSorted.slice(0, n) : negativeSorted;
   let greatestPositive =
-    positiveSorted.length >= 3 ? positiveSorted.slice(0, 3) : positiveSorted;
+    positiveSorted.length >= n ? positiveSorted.slice(0, n) : positiveSorted;
+
+  const greatestNegativeStatic = [...greatestNegative];
 
   let negativeValuesInResult = 0;
   const result = [];
@@ -33,9 +36,10 @@ function findLargestMultiply(arr) {
   for (let i = 0; i <= greatestNegative.length; i++) {
     for (let j = 0; j <= greatestPositive.length; j++) {
       const absoluteValueOfNegative = Math.abs(greatestNegative[i]);
+      const absoluteValueOfNegativeNext = Math.abs(greatestNegative[i + 1]);
 
       // if we dont have 3 results yet
-      if (result.length < 3) {
+      if (result.length < n) {
         // on the first loop we check if the SECOND negative value
         // is smaller then first two positive values,
         // or if there is less then 2 negatives in the array from the beggining
@@ -43,15 +47,15 @@ function findLargestMultiply(arr) {
         // becaus we cant have odd number of negative,
         // which means we can simply return the positiveSorted array as result
         if (
-          (greatestNegative[j + 1] < greatestPositive[i] &&
-            greatestNegative[j + 1] < greatestPositive[i + 1]) ||
-          greatestNegative.length < 2
+          absoluteValueOfNegativeNext < greatestPositive[j + 1] ||
+          greatestNegativeStatic.length < 2
         ) {
           return greatestPositive.reduce((a, b) => a * b);
-        } else if (negativeValuesInResult === 2) {
-          // if there is already 2 negative values in our array
-          // ignore other negative values and push the largest positive value
-          // so the final result will stay positive
+        } else if (isNOdd && negativeValuesInResult === n - 1) {
+          // if n is an odd number and we already have n - 1 negative values
+          // in our result array, it means the next negative value
+          // will turn the multiplication into negative value,
+          // so just leave it and push the largest positive we have
           result.push(greatestPositive[0]);
           break;
         } else {
@@ -75,4 +79,4 @@ function findLargestMultiply(arr) {
   return result.reduce((a, b) => a * b);
 }
 
-console.log(findLargestMultiply(arr));
+console.log(findLargestMultiply(arr, 3));
