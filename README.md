@@ -42,7 +42,7 @@ Similarly, given the target word 'MASS', you should return true, since it's the 
     <br>
   <a href="./isWordExistInBoard.js">explanation</a>
   <br>
-  <a href="https://medium.com/@artium1/interview-question-2-find-the-word-on-board-bba7756a7677">explanation</a>
+  <a target="_blank" href="https://medium.com/@artium1/interview-question-2-find-the-word-on-board-bba7756a7677">explanation</a>
   <br>
   <br>
 </details>
@@ -58,7 +58,7 @@ Similarly, given the target word 'MASS', you should return true, since it's the 
   </p>
   <a href="./twoIdenticalSubsets.js">explanation</a>
   <br>
-  <a href="#">explanation</a>
+  <a target="_blank" href="#">explanation</a>
   <br>
   <br>
 </details>
@@ -74,7 +74,7 @@ Similarly, given the target word 'MASS', you should return true, since it's the 
   </p>
   <a href="./isPerfectNumber.js">explanation</a>
   <br>
-  <a href="#">explanation</a>
+  <a target="_blank" href="#">explanation</a>
     <br>
     <br>
 </details>
@@ -98,7 +98,7 @@ Similarly, given the target word 'MASS', you should return true, since it's the 
   </p>
   <a href="./multiplicationTable.js">explanation</a>
   <br>
-  <a href="#">explanation</a>
+  <a target="_blank" href="#">explanation</a>
     <br>
     <br>
 </details>
