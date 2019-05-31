@@ -14,7 +14,7 @@ This repo will have my solutions for a lot of the questions asked by the big com
   </p>
   <a href="./findTheLargestMultiply.js">solution</a>
   <br>
-  <a target="_blank" href="https://medium.com/@artium1/interview-question-1-find-the-largest-multiply-ebaa972e23d1">explanation</a>
+  <a target="_blank" href="https://medium.com/@obiwankenoobi/interview-question-1-find-the-largest-multiply-ebaa972e23d1">explanation</a>
   <br>
   <br>
 </details>
@@ -42,7 +42,7 @@ Similarly, given the target word 'MASS', you should return true, since it's the 
     <br>
   <a href="./isWordExistInBoard.js">solution</a>
   <br>
-  <a target="_blank" href="https://medium.com/@artium1/interview-question-2-find-the-word-on-board-bba7756a7677">explanation</a>
+  <a target="_blank" href="https://medium.com/@obiwankenoobi/interview-question-2-find-the-word-on-board-bba7756a7677">explanation</a>
   <br>
   <br>
 </details>
@@ -74,7 +74,7 @@ Similarly, given the target word 'MASS', you should return true, since it's the 
   </p>
   <a href="./isPerfectNumber.js">solution</a>
   <br>
-  <a target="_blank" href="#">explanation</a>
+  <a target="_blank" href="https://medium.com/@obiwankenoobi/interview-question-3-is-perfect-number-cb3eb963ae51">explanation</a>
     <br>
     <br>
 </details>

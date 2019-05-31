@@ -24,4 +24,4 @@ function returnPerfectNum(n) {
   return perfetNumber;
 }
 
-console.log(returnPerfectNum(15992));
+console.log(returnPerfectNum(12));
