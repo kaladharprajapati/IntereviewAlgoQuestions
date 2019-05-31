@@ -12,7 +12,7 @@ This repo will have my solutions for a lot of the questions asked by the big com
         You can assume the list has at least three integers.
     </blockquote>
   </p>
-  <a href="./findTheLargestMultiply.js">explanation</a>
+  <a href="./findTheLargestMultiply.js">solution</a>
   <br>
   <a target="_blank" href="https://medium.com/@artium1/interview-question-1-find-the-largest-multiply-ebaa972e23d1">explanation</a>
   <br>
@@ -40,7 +40,7 @@ Similarly, given the target word 'MASS', you should return true, since it's the 
     </blockquote>
   </p>
     <br>
-  <a href="./isWordExistInBoard.js">explanation</a>
+  <a href="./isWordExistInBoard.js">solution</a>
   <br>
   <a target="_blank" href="https://medium.com/@artium1/interview-question-2-find-the-word-on-board-bba7756a7677">explanation</a>
   <br>
@@ -56,7 +56,7 @@ Similarly, given the target word 'MASS', you should return true, since it's the 
         Given the multiset {15, 5, 20, 10, 35}, it would return false, since we can't split it up into two subsets that add up to the same sum.
     </blockquote>
   </p>
-  <a href="./twoIdenticalSubsets.js">explanation</a>
+  <a href="./twoIdenticalSubsets.js">solution</a>
   <br>
   <a target="_blank" href="#">explanation</a>
   <br>
@@ -72,7 +72,7 @@ Similarly, given the target word 'MASS', you should return true, since it's the 
         For example, given 1, you should return 19. Given 2, you should return 28.
     </blockquote>
   </p>
-  <a href="./isPerfectNumber.js">explanation</a>
+  <a href="./isPerfectNumber.js">solution</a>
   <br>
   <a target="_blank" href="#">explanation</a>
     <br>
@@ -96,7 +96,7 @@ Similarly, given the target word 'MASS', you should return true, since it's the 
         | 6 | 12 | 18 | 24 | 30 | 36 |
 </blockquote>
   </p>
-  <a href="./multiplicationTable.js">explanation</a>
+  <a href="./multiplicationTable.js">solution</a>
   <br>
   <a target="_blank" href="#">explanation</a>
     <br>
