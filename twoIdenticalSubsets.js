@@ -13,12 +13,10 @@ const set = [15, 5, 20, 10, 35, 10, 5, 10];
 function twoIdenticalSubsets(set) {
   const setSum = set.reduce((a, b) => a + b);
   const sortedSet = set.sort((a, b) => a < b);
-  const eachSubsetSum = setSum / 2; /*?*/
+  const eachSubsetSum = setSum / 2;
   const sub_1 = [];
   const sub_2 = [];
   let subSetSum = 0;
-
-  console.log(sortedSet);
 
   if (setSum % 2 !== 0) {
     return [];
@@ -26,14 +24,16 @@ function twoIdenticalSubsets(set) {
 
   for (let i = 0; i < sortedSet.length; i++) {
     const nextItem = sortedSet[i + 1];
-    console.log(nextItem);
+    const currentItem = sortedSet[i];
+
     if (i === 0) {
-      // if its first iteretion push the first element into the array
-      sub_1.push(sortedSet[i], nextItem);
-      // add the sum of the first and the second item in the array
-      subSetSum = sortedSet[i] + nextItem; /*?*/
-      if (sortedSet[i] + nextItem === eachSubsetSum) {
-        // if the first and the second items are equel to {eachSubsetSum} push the second item and return the array
+      // if its first iteretion push the first and second element into the array
+      sub_1.push(currentItem, nextItem);
+      // add the sum of the first and the second element in the array
+      subSetSum = currentItem + nextItem;
+      if (subSetSum === eachSubsetSum) {
+        // if the first and the second items are equel to {eachSubsetSum}
+        // then we dove and can return both arrays
         return { sub_1, sub_2: sortedSet.slice(2) };
       }
     } else {
@@ -42,7 +42,7 @@ function twoIdenticalSubsets(set) {
         sub_1.push(nextItem);
 
         // adding sum to total
-        subSetSum += nextItem; /*?*/
+        subSetSum += nextItem;
       } else {
         // if the nextItem and the total sum larger then the {eachSubsetSum} push it to the other array
         sub_2.push(nextItem);
@@ -53,6 +53,8 @@ function twoIdenticalSubsets(set) {
       }
     }
   }
+  // if we went through all of our options and there is no solution
+  // return an empty array
   return [];
 }
 
