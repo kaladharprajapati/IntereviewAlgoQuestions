@@ -114,7 +114,7 @@ Similarly, given the target word 'MASS', you should return true, since it's the 
   </p>
   <a href="./parentheses.js">solution</a>
   <br>
-  <a target="_blank" href="#">explanation</a>
+  <a target="_blank" href="https://medium.com/@obiwankenoobi/interview-question-4-valid-parentheses-aca4214b034b">explanation</a>
     <br>
     <br>
 </details>
