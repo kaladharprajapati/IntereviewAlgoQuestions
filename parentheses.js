@@ -4,7 +4,7 @@
 // write a function to compute the minimum number of parentheses to be removed to make the string valid (i.e. each open parenthesis is eventually closed).
 // For example, given the string "()())()", you should return 1. Given the string ")(", you should return 2, since we must remove all of them.
 
-const parenthesesArr = "()())()()(((())((()))))))))))(((())())";
+const parenthesesStr = "()())()";
 
 function parenthesesRemoval(parentheses) {
   // spliting the string to array
@@ -24,12 +24,7 @@ function parenthesesRemoval(parentheses) {
     // so move on 2 slots
     if (currentChar === open && nextChar === close) {
       i += 2;
-    } else if (
-      (currentChar === close && nextChar === open) || // if the current is closed and next is open
-      (currentChar === open && nextChar === open) || // if current is open and next is open
-      (currentChar === close && nextChar === close) || // if the current is closed and the next is closed
-      !nextChar // is there isnt next char mean it couldnt be valid
-    ) {
+    } else {
       // if any of the above is true
       // means the couple cant be valid
       // so remove the char
@@ -45,4 +40,4 @@ function parenthesesRemoval(parentheses) {
   };
 }
 
-console.log(parenthesesRemoval(parenthesesArr)); /*?*/
+console.log(parenthesesRemoval(parenthesesStr)); /*?*/

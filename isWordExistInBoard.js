@@ -11,7 +11,7 @@
 //  ['M', 'A', 'S', 'S']]
 
 // and the target word 'FOAM', you should return true, since it's the leftmost column.
-//Similarly, given the target word 'MASS', you should return true, since it's the last row.
+// Similarly, given the target word 'MASS', you should return true, since it's the last row.
 
 const board = [
   ["F", "A", "C", "I"],
