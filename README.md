@@ -118,3 +118,19 @@ Similarly, given the target word 'MASS', you should return true, since it's the 
     <br>
     <br>
 </details>
+
+<details>
+  <summary>Division - asked by ContextLogic</summary>
+    <p>
+    <blockquote>
+      Implement division of two positive integers without using the division,
+      multiplication, or modulus operators. Return the quotient as an integer,
+      ignoring the remainder.
+</blockquote>
+  </p>
+  <a href="./division.js">solution</a>
+  <br>
+  <a target="_blank" href="#">explanation</a>
+    <br>
+    <br>
+</details>
