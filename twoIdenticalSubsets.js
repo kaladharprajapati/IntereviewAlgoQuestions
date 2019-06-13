@@ -18,22 +18,24 @@ function twoIdenticalSubsets(set) {
   const sub_2 = [];
   let subSetSum = 0;
 
+  // if the sum cant be divided by 2
+  // simply return because it can't be solved
   if (setSum % 2 !== 0) {
     return [];
   }
 
   for (let i = 0; i < sortedSet.length; i++) {
-    const nextItem = sortedSet[i + 1];
     const currentItem = sortedSet[i];
+    const nextItem = sortedSet[i + 1];
 
     if (i === 0) {
-      // if its first iteretion push the first and second element into the array
+      // if its first iteretion push the first and second element into the first subset array
       sub_1.push(currentItem, nextItem);
       // add the sum of the first and the second element in the array
       subSetSum = currentItem + nextItem;
       if (subSetSum === eachSubsetSum) {
         // if the first and the second items are equel to {eachSubsetSum}
-        // then we dove and can return both arrays
+        // then we done and can return both arrays
         return { sub_1, sub_2: sortedSet.slice(2) };
       }
     } else {
