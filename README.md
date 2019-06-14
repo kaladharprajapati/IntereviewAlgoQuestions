@@ -192,7 +192,7 @@ Similarly, given the target word 'MASS', you should return true, since it's the 
 
    </blockquote>
 
-  <a href="./bishopAttack.js">solution</a>
+  <a href="./bishopsAttack.js">solution</a>
   <br>
   <a target="_blank" href="#">explanation</a>
     <br>
