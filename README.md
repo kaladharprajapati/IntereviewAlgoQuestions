@@ -58,7 +58,7 @@ Similarly, given the target word 'MASS', you should return true, since it's the 
   </p>
   <a href="./twoIdenticalSubsets.js">solution</a>
   <br>
-  <a target="_blank" href="#">explanation</a>
+  <a target="_blank" href="https://medium.com/@obiwankenoobi/interview-question-6-identical-subsets-9c7d787072c1">explanation</a>
   <br>
   <br>
 </details>
@@ -98,7 +98,7 @@ Similarly, given the target word 'MASS', you should return true, since it's the 
   </p>
   <a href="./multiplicationTable.js">solution</a>
   <br>
-  <a target="_blank" href="#">explanation</a>
+  <a target="_blank" href="https://medium.com/@obiwankenoobi/interview-question-5-multiplication-table-69bea7a60869">explanation</a>
     <br>
     <br>
 </details>
@@ -130,7 +130,7 @@ Similarly, given the target word 'MASS', you should return true, since it's the 
     </p>
   <a href="./division.js">solution</a>
   <br>
-  <a target="_blank" href="#">explanation</a>
+  explanation
     <br>
     <br>
 </details>
@@ -194,7 +194,7 @@ Similarly, given the target word 'MASS', you should return true, since it's the 
 
   <a href="./bishopsAttack.js">solution</a>
   <br>
-  <a target="_blank" href="#">explanation</a>
+  explanation
     <br>
     <br>
 </details>
