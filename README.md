@@ -122,15 +122,42 @@ Similarly, given the target word 'MASS', you should return true, since it's the 
 <details>
   <summary>Division - asked by ContextLogic</summary>
     <p>
-    <blockquote>
-      Implement division of two positive integers without using the division,
-      multiplication, or modulus operators. Return the quotient as an integer,
-      ignoring the remainder.
-</blockquote>
-  </p>
+      <blockquote>
+        Implement division of two positive integers without using the division,
+        multiplication, or modulus operators. Return the quotient as an integer,
+        ignoring the remainder.
+      </blockquote>
+    </p>
   <a href="./division.js">solution</a>
   <br>
   <a target="_blank" href="#">explanation</a>
+    <br>
+    <br>
+</details>
+
+<details>
+  <summary>Number of Islands - asked by Amazon</summary>
+    <p>
+      <blockquote>
+        Given a matrix of 1s and 0s, return the number of "islands" in the matrix.
+        A 1 represents land and 0 represents water,
+        so an island is a group of 1s that are neighboring whose perimeter
+        is surrounded by water.
+        For example, this matrix has 4 islands.
+
+    1 0 0 0 0
+    0 0 1 1 0
+    0 1 1 0 0
+    0 0 0 0 0
+    1 1 0 0 1
+    1 1 0 0 1
+  </p>
+
+   </blockquote>
+
+  <a href="./islands.js">solution</a>
+  <br>
+  <a target="_blank" href="https://medium.com/@obiwankenoobi/interview-question-7-find-the-number-of-islands-1216eff9ede9">explanation</a>
     <br>
     <br>
 </details>
