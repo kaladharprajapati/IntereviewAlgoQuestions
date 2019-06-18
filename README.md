@@ -3,21 +3,6 @@
 
 This repo will have my solutions for a lot of the questions asked by the big companies, together with a [medium](http://www.google.com) article for each of them to explain the process. 
 
-<details>
-  <summary>Find The Largest Multiply - asked by Facebook</summary>
-  <p>
-    <blockquote>
-        Given a list of integers, return the largest product that can be made by multiplying any three integers.
-        For example, if the list is [-10, -10, 5, 2], we should return 500, since that's -10 * -10 * 5.
-        You can assume the list has at least three integers.
-    </blockquote>
-  </p>
-  <a href="./findTheLargestMultiply.js">solution</a>
-  <br>
-  <a target="_blank" href="https://medium.com/@obiwankenoobi/interview-question-1-find-the-largest-multiply-ebaa972e23d1">explanation</a>
-  <br>
-  <br>
-</details>
 
 <details>
   <summary>Find The Word In Board - asked by Microsoft</summary>
@@ -198,3 +183,4 @@ Similarly, given the target word 'MASS', you should return true, since it's the 
     <br>
     <br>
 </details>
+
