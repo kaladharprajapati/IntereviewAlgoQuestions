@@ -36,7 +36,10 @@ function twoIdenticalSubsets(set) {
       if (subSetSum === eachSubsetSum) {
         // if the first and the second items are equel to {eachSubsetSum}
         // then we done and can return both arrays
-        return { sub_1, sub_2: sortedSet.slice(2) };
+        return {
+          sub_1,
+          sub_2: sortedSet.slice(2)
+        };
       }
     } else {
       // checking if the next value and sum smaller or equel to to {eachSubsetSum}
@@ -51,7 +54,10 @@ function twoIdenticalSubsets(set) {
       }
 
       if (subSetSum === eachSubsetSum) {
-        return { sub_1, sub_2 };
+        return {
+          sub_1,
+          sub_2
+        };
       }
     }
   }
