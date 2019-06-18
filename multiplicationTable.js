@@ -24,7 +24,7 @@ function multiplicationTable(n, x) {
     table[i] = [];
     for (let j = 0; j < n; j++) {
       // in each row we create n columns.
-      // each iteretion fill the row with values
+      // each iteration fill the row with values
       let valueInIndex = (i + 1) * (j + 1); // the value to add (basically multiplication of the row num and the column num)
 
       // checking if the value addedis equel to X

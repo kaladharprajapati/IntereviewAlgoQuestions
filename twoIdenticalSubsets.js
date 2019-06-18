@@ -6,7 +6,7 @@
 
 // the idea is to find the 1/2 of the sum of the array and then with sorted array b > a
 // you start to look for items which can fit into the pattern from biggest to smallest
-// each iteretion you remember the sum and see if the next item can fit there.
+// each iteration you remember the sum and see if the next item can fit there.
 
 const set = [15, 5, 20, 10, 35, 10, 5, 10];
 
@@ -29,7 +29,7 @@ function twoIdenticalSubsets(set) {
     const nextItem = sortedSet[i + 1];
 
     if (i === 0) {
-      // if its first iteretion push the first and second element into the first subset array
+      // if its first iteration push the first and second element into the first subset array
       sub_1.push(currentItem, nextItem);
       // add the sum of the first and the second element in the array
       subSetSum = currentItem + nextItem;
