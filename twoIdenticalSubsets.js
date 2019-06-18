@@ -12,7 +12,7 @@ const set = [15, 5, 20, 10, 35, 10, 5, 10];
 
 function twoIdenticalSubsets(set) {
   const setSum = set.reduce((a, b) => a + b);
-  const sortedSet = set.sort((a, b) => a < b);
+  const sortedSet = set.sort((a, b) => b - a);
   const eachSubsetSum = setSum / 2;
   const sub_1 = [];
   const sub_2 = [];
