@@ -36,20 +36,26 @@ function searchAttackers(row, col, matrix, parent, attackers, direction) {
     row >= 0 &&
     col >= 0 &&
     row < matrix.length &&
-    col < matrix[row].length; /*?*/
+    col < matrix[row].length;
 
+  // return if the position is out of boarders
   if (!inBoardes) {
     return;
   }
 
   const child = `${row}${col}`;
+  // if we have found a bishop, and its not the bishop we start with
+  // push the couple into our results array
   if (matrix[row][col] === 1 && child !== parent) {
     attackers.push([parent, child]);
   }
 
+  // try it on every position in the right diagonal of the board
   if (direction === 1) {
     searchAttackers(row + 1, col - 1, matrix, parent, attackers, 1);
   }
+
+  // try it on every position in the left diagonal of the board
   if (direction === 0) {
     searchAttackers(row + 1, col + 1, matrix, parent, attackers, 0);
   }
@@ -63,6 +69,8 @@ function explorBoard(matrix) {
       const current = currentRow[col];
       const parent = `${row}${col}`;
 
+      // if we have found bishop parent on our board, 
+      // start eexploring all the possible positions to attack
       if (currentRow[col] === 1) {
         searchAttackers(row, col, matrix, parent, attackers, 1);
         searchAttackers(row, col, matrix, parent, attackers, 0);

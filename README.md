@@ -194,7 +194,7 @@ Similarly, given the target word 'MASS', you should return true, since it's the 
 
   <a href="./bishopsAttack.js">solution</a>
   <br>
-  explanation
+  <a target="_blank" href="https://medium.com/@obiwankenoobi/interview-question-8-bishop-attacks-7780ca7b720">explanation</a>
     <br>
     <br>
 </details>
