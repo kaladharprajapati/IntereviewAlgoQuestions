@@ -200,3 +200,21 @@ Similarly, given the target word 'MASS', you should return true, since it's the 
     <br>
 </details>
 
+
+## Data Structures
+
+<details>
+  <summary>Binary Search Tree</summary>
+    <p>
+      <blockquote>
+        A binary search tree is a rooted binary tree, whose internal nodes each store a key (and optionally, an associated value) and each have two distinguished sub-trees, commonly denoted left and right. The tree additionally satisfies the binary search property, which states that the key in each node must be greater than or equal to any key stored in the left sub-tree, and less than or equal to any key stored in the right sub-tree.[1]:287 The leaves (final nodes) of the tree contain no key and have no structure to distinguish them from one another. <a href="https://en.wikipedia.org/wiki/Binary_search_tree" target="_blank">wikipedia</a>
+      </blockquote>
+    </p>
+  <a href="./DataStructures/BST/BinarySearchTree.js">solution</a>
+  <br>
+  <a href="./DataStructures/BST/test.js">test</a>
+  <br>
+  explanation
+    <br>
+    <br>
+</details>
