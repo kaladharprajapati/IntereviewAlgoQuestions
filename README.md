@@ -131,7 +131,7 @@ Similarly, given the target word 'MASS', you should return true, since it's the 
     </p>
   <a href="./findTheLargestMultiply.js">solution</a>
   <br>
-  explanation
+  <a href="https://medium.com/@obiwankenoobi/interview-question-1-find-the-largest-multiplication-d20aa3723c9d" target="_blank">explanation</a>
     <br>
     <br>
 </details>
