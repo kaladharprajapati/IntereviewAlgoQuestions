@@ -121,6 +121,22 @@ Similarly, given the target word 'MASS', you should return true, since it's the 
 </details>
 
 <details>
+  <summary>Find The largest product - asked by Facebook</summary>
+    <p>
+      <blockquote>
+        Given a list of integers, return the largest product that can be made by multiplying any three integers.
+        For example, if the list is [-10, -10, 5, 2], we should return 500, since that's -10 * -10 * 5.
+        You can assume the list has at least three integers.
+      </blockquote>
+    </p>
+  <a href="./findTheLargestMultiply.js">solution</a>
+  <br>
+  explanation
+    <br>
+    <br>
+</details>
+
+<details>
   <summary>Number of Islands - asked by Amazon</summary>
     <p>
       <blockquote>
