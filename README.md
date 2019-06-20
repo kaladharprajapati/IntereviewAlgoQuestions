@@ -181,6 +181,23 @@ explanation
 </details>
 
 <details>
+  <summary>Decode Message - asked by Facebook (FE position)</summary>
+    <p>
+      <blockquote>
+        Given a grid of characters output a decoded message.
+        The message for the following would be IROCLD.
+        (diagonally down right and diagonally up right if you can't go further
+        .. you continue doing this)
+      </blockquote>
+    </p>
+  <a href="./deCodeString.js">solution</a>
+  <br>
+explanation
+    <br>
+    <br>
+</details>
+
+<details>
   <summary>Number of Islands - asked by Amazon</summary>
     <p>
       <blockquote>
