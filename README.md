@@ -151,6 +151,21 @@ explanation
     <br>
 </details>
 
+<details>
+  <summary>Uniqe String chars - asked by Cracking the coding intereview</summary>
+    <p>
+      <blockquote>
+        Implement an algorithm to determine if a string has all unique characters. What if you
+        can not use additional data structures?
+      </blockquote>
+    </p>
+  <a href="./isStringUniqe.js">solution</a>
+  <br>
+explanation
+    <br>
+    <br>
+</details>
+
 
 
 <details>
