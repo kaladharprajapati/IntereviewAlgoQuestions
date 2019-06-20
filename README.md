@@ -137,6 +137,23 @@ Similarly, given the target word 'MASS', you should return true, since it's the 
 </details>
 
 <details>
+  <summary>Create binary tree from sorted array - asked by Cracking the coding intereview</summary>
+    <p>
+      <blockquote>
+        Given a sorted (increasing order) array, write an algorithm to create a binary tree with
+        minimal height.
+      </blockquote>
+    </p>
+  <a href="./minimalBinaryTree.js">solution</a>
+  <br>
+explanation
+    <br>
+    <br>
+</details>
+
+
+
+<details>
   <summary>Number of Islands - asked by Amazon</summary>
     <p>
       <blockquote>
