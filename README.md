@@ -219,8 +219,12 @@ explanation
         The message for the following would be IROCLD.
         (diagonally down right and diagonally up right if you can't go further
         .. you continue doing this)
-      </blockquote>
-    </p>
+
+        I B C A L K A
+        D R F C A E A
+        G H O E L A D
+  </blockquote>
+  </p>
   <a href="./deCodeString.js">solution</a>
   <br>
 explanation
