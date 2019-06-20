@@ -151,6 +151,22 @@ explanation
     <br>
 </details>
 
+
+<details>
+  <summary>Rotate Image - asked by Cracking the coding intereview</summary>
+    <p>
+      <blockquote>
+        Given an image represented by an NxN matrix,
+        write a method to rotate the image by 90 degrees. Can you do this in place?
+      </blockquote>
+    </p>
+  <a href="./rotateImage.js">solution</a>
+  <br>
+explanation
+    <br>
+    <br>
+</details>
+
 <details>
   <summary>Uniqe String chars - asked by Cracking the coding intereview</summary>
     <p>
