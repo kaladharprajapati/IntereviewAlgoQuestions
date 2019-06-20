@@ -1,4 +1,4 @@
-export default class BinarySearchTree {
+class BinarySearchTree {
   constructor(value) {
     this.value = value;
     this.right = null;
@@ -7,9 +7,14 @@ export default class BinarySearchTree {
   }
 
   add(value) {
-    const Node = new BinarySearchTree(value);
-
     let currentNode = this;
+
+    if (!currentNode.value) {
+      currentNode.value = value;
+      return;
+    }
+
+    const Node = new BinarySearchTree(value);
 
     while (
       (Node.value <= currentNode.value && currentNode.right !== null) ||
@@ -153,14 +158,4 @@ export default class BinarySearchTree {
   }
 }
 
-const root = new BinarySearchTree(10); /*?*/
-
-root.add(13);
-root.add(10.5);
-root.add(10.75);
-
-const path = root.traverse();
-console.log(path);
-console.log(root.search(13));
-console.log(root.delete(10));
-console.log(root.traverse());
+module.exports = BinarySearchTree;
