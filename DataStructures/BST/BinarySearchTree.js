@@ -32,6 +32,15 @@ export default class BinarySearchTree {
   }
 
   delete(value) {
+    function findInOrderSuccessor(node) {
+      const leftChild = node.left;
+      let currentNode = leftChild;
+      while (currentNode.right) {
+        currentNode = currentNode.right;
+      }
+      return currentNode;
+    }
+
     const nodeToRemove = this.search(value);
 
     if (!nodeToRemove) {
@@ -52,8 +61,14 @@ export default class BinarySearchTree {
 
       // if the node to delete has exactly one child
     } else if (!nodeToRemove.left && nodeToRemove.right) {
+      // check if this is the root
+      if (!nodeToRemoveParent) {
+        nodeToRemove.right = nodeToRemove.right;
+        nodeToRemove.value = nodeToRemove.value;
+        nodeToRemove.parent = null;
+      }
       // check if the node to remove is the right node
-      if (nodeToRemoveParent.right === nodeToRemove) {
+      else if (nodeToRemoveParent.right === nodeToRemove) {
         // if so, assign the parent with the child of the node to delete
         // by doing so, we preserved all its children but we romoved itself
         nodeToRemoveParent.right = nodeToRemove.right;
@@ -66,9 +81,13 @@ export default class BinarySearchTree {
       }
 
       // same process as on top only for the scenario
-      // where there is left child and nor right child
+      // where there is left child and or right child
     } else if (!nodeToRemove.right && nodeToRemove.left) {
-      if (nodeToRemoveParent.right === nodeToRemove) {
+      if (!nodeToRemoveParent) {
+        nodeToRemove.left = nodeToRemove.left;
+        nodeToRemove.value = nodeToRemove.value;
+        nodeToRemove.parent = null;
+      } else if (nodeToRemoveParent.right === nodeToRemove) {
         nodeToRemoveParent.right = nodeToRemove.left;
       } else {
         nodeToRemoveParent.left = nodeToRemove.left;
@@ -77,7 +96,8 @@ export default class BinarySearchTree {
       // if there is two childer for the node to remove
       // find the in-order successor and assign its value
       // to the nodeToRemove value, and its left childer
-      const inOrderSuccessor = this.findInOrderSuccessor(nodeToRemove);
+
+      const inOrderSuccessor = findInOrderSuccessor(nodeToRemove);
 
       // assiging the nodeToRemove.value to the
       nodeToRemove.value = inOrderSuccessor.value;
@@ -88,15 +108,6 @@ export default class BinarySearchTree {
     }
 
     return this;
-  }
-
-  findInOrderSuccessor(node) {
-    const leftChild = node.left;
-    let currentNode = leftChild;
-    while (currentNode.right) {
-      currentNode = currentNode.right;
-    }
-    return currentNode;
   }
 
   traverse(node) {
@@ -141,3 +152,15 @@ export default class BinarySearchTree {
     }
   }
 }
+
+const root = new BinarySearchTree(10); /*?*/
+
+root.add(13);
+root.add(10.5);
+root.add(10.75);
+
+const path = root.traverse();
+console.log(path);
+console.log(root.search(13));
+console.log(root.delete(10));
+console.log(root.traverse());
