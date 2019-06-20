@@ -166,7 +166,19 @@ explanation
     <br>
 </details>
 
-
+<details>
+  <summary>Flat multidimensional array - asked by Facebook (FE position)</summary>
+    <p>
+      <blockquote>
+        Given an array of any types, flat it so it wont have any nested arrays inside
+      </blockquote>
+    </p>
+  <a href="./flattArr.js">solution</a>
+  <br>
+explanation
+    <br>
+    <br>
+</details>
 
 <details>
   <summary>Number of Islands - asked by Amazon</summary>
