@@ -33,10 +33,7 @@ const board = [
 
 function searchAttackers(row, col, matrix, parent, attackers, direction) {
   const inBoardes =
-    row >= 0 &&
-    col >= 0 &&
-    row < matrix.length &&
-    col < matrix[row].length;
+    row >= 0 && col >= 0 && row < matrix.length && col < matrix[row].length;
 
   // return if the position is out of boarders
   if (!inBoardes) {
@@ -69,7 +66,7 @@ function explorBoard(matrix) {
       const current = currentRow[col];
       const parent = `${row}${col}`;
 
-      // if we have found bishop parent on our board, 
+      // if we have found bishop parent on our board,
       // start eexploring all the possible positions to attack
       if (currentRow[col] === 1) {
         searchAttackers(row, col, matrix, parent, attackers, 1);
