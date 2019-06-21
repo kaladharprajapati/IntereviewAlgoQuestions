@@ -216,7 +216,7 @@ explanation
     <p>
       <blockquote>
         Given a grid of characters output a decoded message.
-        The message for the following would be IROCLD.
+        The message for the following would be IROCLED.
         (diagonally down right and diagonally up right if you can't go further
         .. you continue doing this)
 
