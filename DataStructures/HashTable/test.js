@@ -8,3 +8,5 @@ console.log(map.set("hell", "people"));
 console.log(map.get("hello"));
 console.log(map.get("hell"));
 console.log(map.get("hel"));
+console.log(map.set("world", "yey"));
+map;

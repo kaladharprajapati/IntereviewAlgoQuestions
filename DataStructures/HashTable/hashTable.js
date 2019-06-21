@@ -1,9 +1,7 @@
 const LinkedList = require("../LinkedList/LinkedList");
 
 class HashTable {
-  constructor() {
-    this.map = [];
-  }
+  constructor() {}
 
   hash(string) {
     return (
@@ -16,14 +14,14 @@ class HashTable {
   set(prop, value) {
     const idx = this.hash(prop); /*?*/
     // if no item in the index
-    if (!this.map[idx]) {
-      this.map[idx] = new LinkedList([prop, value]);
-      return this.map[idx];
+    if (!this[idx]) {
+      this[idx] = new LinkedList([prop, value]);
+      return this[idx];
     }
     // if there is item
     // we need to check if the given prop exist
-    if (!!this.map[idx]) {
-      let current = this.map[idx];
+    if (!!this[idx]) {
+      let current = this[idx];
       // searching if the prop passed exist
       // if so we overide it with the new value
       // if not we chain it at the end
@@ -46,24 +44,24 @@ class HashTable {
       current.next = new LinkedList([prop, value]);
       return current.next;
     }
-    return this.map[idx];
+    return this[idx];
   }
 
   get(prop) {
     const idx = this.hash(prop);
 
     // if no item in the index
-    if (!this.map[idx]) {
+    if (!this[idx]) {
       return null;
     }
 
     // if there is only one node in the index
-    if (!this.map[idx].next) {
-      return this.map[idx].value[1];
+    if (!this[idx].next) {
+      return this[idx].value[1];
 
       // if there is multiple nodes in the index
     } else {
-      let current = this.map[idx];
+      let current = this[idx];
       while (current.next) {
         current = current.next;
         // search for the right prop name and return its value
