@@ -1,10 +1,14 @@
-export default class LinkedList {
-  constructor(head) {
-    this.head = head;
+class LinkedList {
+  constructor(value) {
+    this.value = value;
     this.next = null;
   }
 
   add(item) {
+    if (!this.value) {
+      this.value = item;
+      return;
+    }
     let currentNode = this;
     while (currentNode.next) {
       currentNode = currentNode.next;
@@ -18,7 +22,7 @@ export default class LinkedList {
 
     while (currentNode.next) {
       currentNode = currentNode.next;
-      if (currentNode.head === item) {
+      if (currentNode.value === item) {
         return currentNode;
       }
     }
@@ -26,3 +30,5 @@ export default class LinkedList {
     return null;
   }
 }
+
+module.exports = LinkedList;
