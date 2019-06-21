@@ -1,8 +1,6 @@
 const LinkedList = require("../LinkedList/LinkedList");
 
 class HashTable {
-  constructor() {}
-
   hash(string) {
     return (
       Math.abs(
@@ -26,7 +24,7 @@ class HashTable {
       // if so we overide it with the new value
       // if not we chain it at the end
       if (!current.next && current.value[0] === prop) {
-        current.value[0] === prop;
+        current.value = [prop, value];
         return current;
       }
 
