@@ -171,7 +171,7 @@ explanation
   <summary>Permutation - asked by Cracking the coding intereview</summary>
     <p>
       <blockquote>
-        Givven a String, create all possible strings from it
+        Given a String, create all possible strings from it
         for example string = "abc" => ["abc", "bac", "bca", "cba", "cab", "acb"]
       </blockquote>
     </p>
