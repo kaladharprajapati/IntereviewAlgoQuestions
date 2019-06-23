@@ -115,24 +115,44 @@ class BinarySearchTree {
     return this;
   }
 
-  traverse(node) {
-    let holder = [];
+  dfs(node) {
+    let path = [];
 
     if (!node) {
-      return this.traverse(this);
+      return this.dfs(this);
     }
 
     if (node.right) {
-      holder = holder.concat(this.traverse(node.right));
+      path = path.concat(this.dfs(node.right));
     }
 
-    holder.push(node.value);
+    path.push(node.value);
 
     if (node.left) {
-      holder = holder.concat(this.traverse(node.left));
+      path = path.concat(this.dfs(node.left));
     }
 
-    return holder;
+    return path;
+  }
+
+  bfs() {
+    const path = [];
+    const queue = [];
+
+    queue.push(this);
+    while (queue.length) {
+      const topElement = queue.shift();
+      if (topElement.left && topElement.right) {
+        queue.push(topElement.right, topElement.left);
+      } else if (topElement.left) {
+        queue.push(topElement.left);
+      } else if (topElement.right) {
+        queue.push(topElement.right);
+      }
+
+      path.push(topElement.value);
+    }
+    return path;
   }
 
   search(value, node) {
