@@ -182,6 +182,26 @@ explanation
     <br>
 </details>
 
+
+<details>
+  <summary>Paint Fill - asked by Cracking the coding intereview</summary>
+    <p>
+      <blockquote>
+        Implement the “paint fill” function that one might see on
+        many image editing programs. That is, given a screen
+        (represented by a 2 dimensional array of Colors), a point, and a new color,
+        fill in the surrounding area until you hit a border of that color.’
+      </blockquote>
+    </p>
+  <a href="./paintFill.js">solution</a>
+  <br>
+explanation
+    <br>
+    <br>
+</details>
+
+
+
 <details>
   <summary>Uniqe String chars - asked by Cracking the coding intereview</summary>
     <p>
