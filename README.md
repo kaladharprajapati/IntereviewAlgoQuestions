@@ -167,20 +167,7 @@ explanation
     <br>
 </details>
 
-<details>
-  <summary>Permutation - asked by Cracking the coding intereview</summary>
-    <p>
-      <blockquote>
-        Given a String, create all possible strings from it
-        for example string = "abc" => ["abc", "bac", "bca", "cba", "cab", "acb"]
-      </blockquote>
-    </p>
-  <a href="./permutation.js">solution</a>
-  <br>
-explanation
-    <br>
-    <br>
-</details>
+
 
 
 <details>
