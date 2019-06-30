@@ -5,6 +5,22 @@ This repo will have my solutions for a lot of the questions asked by the big com
 
 
 <details>
+  <summary>Find all dice roll options - asked by Facebook</summary>
+  <p>
+    <blockquote>
+        Given N represent the number of dices you have,
+        output all the possibilities you can have.
+    </blockquote>
+  </p>
+  <a href="./allDiceOptions.js">solution</a>
+  <br>
+  <a target="_blank" href="https://medium.com/@obiwankenoobi/interview-question-10-roll-the-dice-b88c21b3f6e4">explanation</a>
+  <br>
+  <br>
+</details>
+
+
+<details>
   <summary>Find The Word In Board - asked by Microsoft</summary>
   <p>
     <blockquote>
