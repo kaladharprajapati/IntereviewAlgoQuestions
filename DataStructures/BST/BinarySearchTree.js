@@ -17,22 +17,22 @@ class BinarySearchTree {
     const Node = new BinarySearchTree(value);
 
     while (
-      (Node.value <= currentNode.value && currentNode.right !== null) ||
-      (Node.value > currentNode.value && currentNode.left !== null)
+      (Node.value <= currentNode.value && currentNode.left !== null) ||
+      (Node.value > currentNode.value && currentNode.right !== null)
     ) {
       if (Node.value <= currentNode.value) {
-        currentNode = currentNode.right;
-      } else {
         currentNode = currentNode.left;
+      } else {
+        currentNode = currentNode.right;
       }
     }
 
     if (Node.value <= currentNode.value) {
       Node.parent = currentNode;
-      currentNode.right = Node;
+      currentNode.left = Node;
     } else {
       Node.parent = currentNode;
-      currentNode.left = Node;
+      currentNode.right = Node;
     }
   }
 
@@ -115,22 +115,59 @@ class BinarySearchTree {
     return this;
   }
 
-  dfs(node) {
+  dfsInOrder(node) {
     let path = [];
 
     if (!node) {
-      return this.dfs(this);
+      return this.dfsInOrder(this);
     }
 
     if (node.right) {
-      path = path.concat(this.dfs(node.right));
+      path = path.concat(this.dfsInOrder(node.right));
+    }
+    path.push(node.value);
+
+    if (node.left) {
+      path = path.concat(this.dfsInOrder(node.left));
+    }
+    return path;
+  }
+
+  dfsPreOrder(node) {
+    let path = [];
+
+    if (!node) {
+      return this.dfsPreOrder(this);
     }
 
     path.push(node.value);
 
     if (node.left) {
-      path = path.concat(this.dfs(node.left));
+      path = path.concat(this.dfsPreOrder(node.left));
     }
+
+    if (node.right) {
+      path = path.concat(this.dfsPreOrder(node.right));
+    }
+
+    return path;
+  }
+
+  dfsPostOrder(node) {
+    let path = [];
+
+    if (!node) {
+      return this.dfsPostOrder(this);
+    }
+
+    if (node.left) {
+      path = path.concat(this.dfsPostOrder(node.left));
+    }
+    if (node.right) {
+      path = path.concat(this.dfsPostOrder(node.right));
+    }
+
+    path.push(node.value);
 
     return path;
   }
@@ -168,11 +205,11 @@ class BinarySearchTree {
       return null;
     }
 
-    if (value > node.value && node.left) {
+    if (value < node.value && node.left) {
       return this.search(value, node.left);
     }
 
-    if (value < node.value && node.right) {
+    if (value > node.value && node.right) {
       return this.search(value, node.right);
     }
   }
