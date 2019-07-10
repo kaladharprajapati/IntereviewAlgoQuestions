@@ -39,10 +39,9 @@ class LinkedList {
           this.tail = prev;
         }
 
-        const temp = current;
         prev.next = current.next;
 
-        return temp;
+        return current;
       }
       prev = current;
       current = current.next;
