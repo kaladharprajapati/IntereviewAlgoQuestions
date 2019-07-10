@@ -1,30 +1,75 @@
-class LinkedList {
+class Node {
   constructor(value) {
-    this.value = value;
     this.next = null;
+    this.value = value;
+  }
+}
+
+class LinkedList {
+  constructor() {
+    this.head = null;
+    this.tail = null;
   }
 
-  add(item) {
-    if (!this.value) {
-      this.value = item;
+  add(value) {
+    const node = new Node(value);
+    if (!this.tail) {
+      this.head = node;
+      this.tail = node;
       return;
     }
-    let currentNode = this;
-    while (currentNode.next) {
-      currentNode = currentNode.next;
-    }
-    const node = new LinkedList(item);
-    currentNode.next = node;
+    this.tail.next = node;
+    this.tail = node;
   }
 
-  has(item) {
-    let currentNode = this;
+  getHead() {
+    return this.head;
+  }
 
-    while (currentNode.next) {
-      currentNode = currentNode.next;
-      if (currentNode.value === item) {
-        return currentNode;
+  getTail() {
+    return this.tail;
+  }
+
+  removeNode(value) {
+    let current = this.head;
+    let prev = current;
+    while (current) {
+      if (current.value === value) {
+        if (current === this.tail) {
+          this.tail = prev;
+        }
+
+        const temp = current;
+        prev.next = current.next;
+
+        return temp;
       }
+      prev = current;
+      current = current.next;
+    }
+
+    return null;
+  }
+
+  getAllNodes() {
+    const holder = [];
+    let current = this.head;
+
+    while (current) {
+      holder.push(current.value);
+      current = current.next;
+    }
+
+    return holder;
+  }
+
+  has(value) {
+    let current = this.head;
+    while (current.next) {
+      if (current.value === value) {
+        return current;
+      }
+      current = current.next;
     }
 
     return null;
