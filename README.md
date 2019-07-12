@@ -190,7 +190,7 @@ Similarly, given the target word 'MASS', you should return true, since it's the 
   you could climb 1, 3, or 5 steps at a time. Generalize your function to take in X.
 </blockquote>
 </p>
-  <a href="./findSumInTree.js">solution</a>
+  <a href="./findRouteToNsteps.js">solution</a>
   <br>
   explanation
     <br>
