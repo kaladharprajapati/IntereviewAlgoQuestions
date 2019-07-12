@@ -1,0 +1,22 @@
+{
+  "name": "interviewquestions",
+  "version": "1.0.0",
+  "description": "This repo will have my solutions for a lot of the questions asked by the big companies, together with a [medium](http://www.google.com) article for each of them to explain the process.",
+  "main": "DesignClass.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/obiwankenoobi/IntereviewAlgoQuestions.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/obiwankenoobi/IntereviewAlgoQuestions/issues"
+  },
+  "homepage": "https://github.com/obiwankenoobi/IntereviewAlgoQuestions#readme",
+  "dependencies": {
+    "fastpriorityqueue": "^0.6.3"
+  }
+}
