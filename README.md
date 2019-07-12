@@ -379,6 +379,20 @@ explanation
 </details>
 
 <details>
+  <summary>Permute a String - Cracking The Coding Interview</summary>
+    <p>
+      <blockquote>
+          Return all possible pernutes of a string
+      </blockquote>
+    </p>
+  <a href="./permutation.js">solution</a>
+  <br>
+explanation
+    <br>
+    <br>
+</details>
+
+<details>
   <summary>Decode Message - asked by Facebook (FE position)</summary>
     <p>
       <blockquote>
