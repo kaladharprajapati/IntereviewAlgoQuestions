@@ -235,6 +235,34 @@ explanation
 </details>
 
 <details>
+  <summary>Invert Tree - asked by Google coding intereview</summary>
+    <p>
+      <blockquote>
+        Invert a binary tree.
+        For example, given the following tree:
+
+            a
+          / \
+          b   c
+        / \  /
+       d   e f
+        should become:
+
+          a
+        / \
+        c  b
+        \  / \
+        f e  d
+  </blockquote>
+  </p>
+  <a href="./invertTree">solution</a>
+  <br>
+explanation
+    <br>
+    <br>
+</details>
+
+<details>
   <summary>Flat multidimensional array - asked by Facebook (FE position)</summary>
     <p>
       <blockquote>
