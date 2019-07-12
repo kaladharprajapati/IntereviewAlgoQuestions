@@ -146,7 +146,23 @@ Similarly, given the target word 'MASS', you should return true, since it's the 
         can you perform this operation in-place?
       </blockquote>
     </p>
-  <a href="./reverseWords.js.js">solution</a>
+  <a href="./reverseWords.js">solution</a>
+  <br>
+  explanation
+    <br>
+    <br>
+</details>
+
+<details>
+  <summary>Find Sum In Tree - asked by Cracking The Coding Interview</summary>
+    <p>
+      <blockquote>
+        You are given a binary tree in which each node contains a value. Design an algorithm
+        to print all paths which sum up to that value. Note that it can be any path in the tree
+        - it does not have to start at the root.
+      </blockquote>
+    </p>
+  <a href="./findSumInTree.js">solution</a>
   <br>
   explanation
     <br>
