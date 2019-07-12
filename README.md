@@ -210,7 +210,7 @@ Similarly, given the target word 'MASS', you should return true, since it's the 
     </p>
   <a href="./findLongestSubSeq.js">solution</a>
   <br>
-  explanation
+  <a href="https://medium.com/@obiwankenoobi/interview-question-11-find-longest-sub-sequence-7b3bb4e0613d" target="_blank">explanation</a>
     <br>
     <br>
 </details>
