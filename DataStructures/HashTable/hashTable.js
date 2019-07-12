@@ -1,6 +1,11 @@
 const LinkedList = require("../LinkedList/LinkedList");
 
 class HashTable {
+  constructor() {
+    this.length = 0;
+    this.next = null;
+  }
+
   hash(string) {
     return (
       Math.abs(
@@ -14,6 +19,8 @@ class HashTable {
     // if no item in the index
     if (!this[idx]) {
       this[idx] = new LinkedList([prop, value]);
+      this.length++;
+      this.next = this[idx];
       return this[idx];
     }
     // if there is item
@@ -55,7 +62,7 @@ class HashTable {
 
     // if there is only one node in the index
     if (!this[idx].next) {
-      return this[idx].value[1];
+      return this[idx];
 
       // if there is multiple nodes in the index
     } else {
@@ -64,7 +71,7 @@ class HashTable {
         current = current.next;
         // search for the right prop name and return its value
         if (current.value[0] === prop) {
-          return current.value[1];
+          return current;
         }
       }
       // if no prop has found return null
