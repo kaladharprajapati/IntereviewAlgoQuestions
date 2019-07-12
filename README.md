@@ -221,6 +221,20 @@ explanation
 </details>
 
 <details>
+  <summary>Maze Solver - asked by Cracking the coding intereview</summary>
+    <p>
+      <blockquote>
+        Here we have a small program with 3 of the most used Graph exploring algorithms. We use them to solve mazes and animate the way to demonstrate how the algorithm works.
+      </blockquote>
+    </p>
+  <a href="./Maze/README.md">solution</a>
+  <br>
+explanation
+    <br>
+    <br>
+</details>
+
+<details>
   <summary>Flat multidimensional array - asked by Facebook (FE position)</summary>
     <p>
       <blockquote>
@@ -373,6 +387,7 @@ explanation
     <br>
     <br>
 </details>
+
 
 
 <details>
