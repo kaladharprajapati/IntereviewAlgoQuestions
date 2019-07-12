@@ -393,6 +393,25 @@ explanation
 </details>
 
 <details>
+  <summary>How Many routes - Cracking The Coding Interview</summary>
+    <p>
+      <blockquote>
+        Imagine a robot sitting on the upper left hand corner of an NxN grid. The robot can
+        only move in two directions: right and down. How many possible paths are there for
+        the robot?
+        FOLLOW UP
+        Imagine certain squares are “off limits”, such that the robot can not step on them.
+        Design an algorithm to get all possible paths for the robot.
+      </blockquote>
+    </p>
+  <a href="./howManyRoutes.js">solution</a>
+  <br>
+explanation
+    <br>
+    <br>
+</details>
+
+<details>
   <summary>Decode Message - asked by Facebook (FE position)</summary>
     <p>
       <blockquote>
