@@ -1,5 +1,5 @@
 # Intereview Algorithm Questions 
-## Implemented in Javascript
+## Questions
 
 This repo will have my solutions for a lot of the questions asked by the big companies, together with a [medium](http://www.google.com) article for each of them to explain the process. 
 
