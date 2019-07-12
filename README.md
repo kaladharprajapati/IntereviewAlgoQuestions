@@ -164,7 +164,7 @@ Similarly, given the target word 'MASS', you should return true, since it's the 
     </p>
   <a href="./findSumInTree.js">solution</a>
   <br>
-  explanation
+  <a target="_blank" href="https://medium.com/@obiwankenoobi/interview-question-12-find-sum-in-tree-3ed727afb44">explanation</a>
     <br>
     <br>
 </details>
