@@ -263,6 +263,29 @@ explanation
 </details>
 
 <details>
+  <summary>Path To Leafs - asked by Facebook</summary>
+    <p>
+      <blockquote>
+        Given a binary tree, return all paths from the root to leaves.
+        For example, given the tree:
+
+           1
+          / \
+         2   3
+            / \
+           4   5
+
+  Return [[1, 2], [1, 3, 4], [1, 3, 5]].
+      </blockquote>
+    </p>
+  <a href="./pathToLeafs.js">solution</a>
+  <br>
+explanation
+    <br>
+    <br>
+</details>
+
+<details>
   <summary>Flat multidimensional array - asked by Facebook (FE position)</summary>
     <p>
       <blockquote>
