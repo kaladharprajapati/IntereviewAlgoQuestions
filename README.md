@@ -137,6 +137,54 @@ Similarly, given the target word 'MASS', you should return true, since it's the 
 </details>
 
 <details>
+  <summary>Is tree Balanced - asked by Cracking The Coding Interview</summary>
+    <p>
+      <blockquote>
+        Implement a function to check if a tree is balanced 
+        For the purposes of this question, 
+        a balanced tree is defined to be a tree such that no two leaf nodes differ in distance from the root by more than one
+      </blockquote>
+    </p>
+  <a href="./isTreeBalanced.js">solution</a>
+  <br>
+  explanation
+    <br>
+    <br>
+</details>
+
+<details>
+  <summary>minimum number of coins - asked by asked by Google</summary>
+    <p>
+      <blockquote>
+        Implement a function to check if a tree is balanced 
+        For the purposes of this question, 
+        a balanced tree is defined to be a tree such that no two leaf nodes differ in distance from the root by more than one
+      </blockquote>
+    </p>
+  <a href="./minimumToMakeN.js">solution</a>
+  <br>
+  explanation
+    <br>
+    <br>
+</details>
+
+<details>
+  <summary>rotate array - asked by asked by Facebook</summary>
+    <p>
+      <blockquote>
+        Write a function that rotates a list by k elements. 
+        For example, [1, 2, 3, 4, 5, 6] rotated by two becomes [3, 4, 5, 6, 1, 2]. 
+        Try solving this without creating a copy of the list. How many swap or move operations do you need?
+      </blockquote>
+    </p>
+  <a href="./rotateArray.js">solution</a>
+  <br>
+  explanation
+    <br>
+    <br>
+</details>
+
+<details>
   <summary>Reverse Words - asked by Google</summary>
     <p>
       <blockquote>
@@ -496,6 +544,73 @@ explanation
     <br>
 </details>
 
+
+
+## Algorithms - [visualization](https://obiwankenoobi.github.io/public/)
+
+
+<details>
+  <summary>A* search</summary>
+    <p>
+      <blockquote>
+          In computer science, A* (pronounced "A-star") is a computer algorithm that is widely used in pathfinding and graph traversal, which is the process of finding a path between multiple points, called "nodes". It enjoys widespread use due to its performance and accuracy. However, in practical travel-routing systems, it is generally outperformed by algorithms which can pre-process the graph to attain better performance,[1] although other work has found A* to be superior to other approaches.<a href="https://en.wikipedia.org/wiki/A*_search_algorithm" target="_blank">wikipedia</a>
+      </blockquote>
+    </p>
+  <a href="https://github.com/obiwankenoobi/obiwankenoobi.github.io/blob/master/src/Graphs/grid.ts#L136-L155">solution</a>
+  <br>
+  <br>
+</details>
+
+
+<details>
+  <summary>Depth-first search</summary>
+    <p>
+      <blockquote>
+        Depth-first search (DFS) is an algorithm for traversing or searching tree or graph data structures. The algorithm starts at the root node (selecting some arbitrary node as the root node in the case of a graph) and explores as far as possible along each branch before backtracking. <a href="https://en.wikipedia.org/wiki/Depth-first_search" target="_blank">wikipedia</a>
+      </blockquote>
+    </p>
+  <a href="https://github.com/obiwankenoobi/obiwankenoobi.github.io/blob/master/src/Graphs/grid.ts#L159-L176">solution</a>
+  <br>
+  <br>
+</details>
+
+
+<details>
+  <summary>Breadth-first search</summary>
+    <p>
+      <blockquote>
+        Breadth-first search (BFS) is an algorithm for traversing or searching tree or graph data structures. It starts at the tree root (or some arbitrary node of a graph, sometimes referred to as a 'search key'[1]), and explores all of the neighbor nodes at the present depth prior to moving on to the nodes at the next depth level. <a href="https://en.wikipedia.org/wiki/Breadth-first_search" target="_blank">wikipedia</a>
+      </blockquote>
+    </p>
+  <a href="https://github.com/obiwankenoobi/obiwankenoobi.github.io/blob/master/src/Graphs/grid.ts#L136-L155">solution</a>
+  <br>
+  <br>
+</details>
+
+<details>
+  <summary>Quick Sort</summary>
+    <p>
+      <blockquote>
+        Quicksort (sometimes called partition-exchange sort) is an efficient sorting algorithm, serving as a systematic method for placing the elements of a random access file or an array in order. Developed by British computer scientist Tony Hoare in 1959[1] and published in 1961, it is still a commonly used algorithm for sorting. When implemented well, it can be about two or three times faster than its main competitors, merge sort and heapsort. <a href="https://en.wikipedia.org/wiki/Quicksort" target="_blank">wikipedia</a>
+      </blockquote>
+    </p>
+  <a href="./Algorithms/Sort/quickSort.js">solution</a>
+  <br>
+  <br>
+</details>
+
+
+<details>
+  <summary>Merge Sort</summary>
+    <p>
+      <blockquote>
+        In computer science, merge sort (also commonly spelled mergesort) is an efficient, general-purpose, comparison-based sorting algorithm. Most implementations produce a stable sort, which means that the order of equal elements is the same in the input and output. Merge sort is a divide and conquer algorithm that was invented by John von Neumann in 1945.[2] A detailed description and analysis of bottom-up mergesort appeared in a report by Goldstine and von Neumann as early as 1948. <a href="https://en.wikipedia.org/wiki/Merge_sort" target="_blank">wikipedia</a>
+      </blockquote>
+    </p>
+  <a href="./Algorithms/Sort/mergeSort.js">solution</a>
+  <br>
+  <br>
+</details>
 
 ## Data Structures
 
