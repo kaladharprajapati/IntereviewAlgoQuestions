@@ -496,6 +496,20 @@ explanation
 </details>
 
 <details>
+  <summary>Reverse part of a list - asked by unknown</summary>
+    <p>
+      <blockquote>
+        Given a list, sort it using this method: reverse(lst, i, j), which reverses lst from i to j.
+  </blockquote>
+  </p>
+  <a href="./reversePartial.js">solution</a>
+  <br>
+  explanation
+    <br>
+    <br>
+</details>
+
+<details>
   <summary>Number of Islands - asked by Amazon</summary>
     <p>
       <blockquote>
