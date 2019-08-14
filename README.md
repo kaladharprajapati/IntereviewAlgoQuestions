@@ -490,7 +490,7 @@ explanation
   </p>
   <a href="./findNearest.js">solution</a>
   <br>
-explanation
+<a href="https://medium.com/@obiwankenoobi/interview-question-13-find-nearest-ca8938eb6c17">explanation</a>
     <br>
     <br>
 </details>
