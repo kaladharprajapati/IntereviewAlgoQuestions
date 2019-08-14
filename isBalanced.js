@@ -4,16 +4,18 @@
 // For example, (()* and (*) are balanced. )*( is not balanced.
 
 
+let isBalancedBool = true;
 
 function isBalanced(str, i = 0, j = str.length - 1) {
     if (i >= j) return;
 
     if ((str[i] === "(" || str[i] === "*") && (str[j] === ")" || str[j] === "*")) {
         isBalanced(str, i+1, j-1);
-        return true;
+    } else {
+        isBalancedBool = false;
     }
-
-    return false
 }
 
-console.log(isBalanced("(*)(*)"))
+
+isBalanced("()()")
+console.log(isBalancedBool) /*?*/
